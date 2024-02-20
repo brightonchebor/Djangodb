@@ -1,1 +1,10 @@
-Hello World!
+<h1>Members Database</h1>
+
+{% for item in all%}
+   {{ item.fname}} {{ item.lname }} <br/>
+   Email: {{ item.email}} <br/>
+   Age: {{ item.age }} <br/><br/>
+   <hr>
+
+{% endfor %}
+

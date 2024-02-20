@@ -5,8 +5,10 @@ class Member(models.Model):
     fname = models.CharField(max_length=50)
     lname = models.CharField(max_length=100)
     email = models.EmailField(max_length=100)
-    age = models.IntegerField()
     pwd = models.CharField(max_length=50)
+    age = models.IntegerField()
 
+    def __str__(self):
+        return self.fname + ' ' + self.lname
 
 
