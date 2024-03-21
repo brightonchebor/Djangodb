@@ -1,13 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Add your own styles here */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: left;
+            padding: 20px;
+        }
 
-<h1>Members Database</h1>
-{% block content %}
- 
-   {% for item in all%}
-      {{ item.fname}} {{ item.lname }} <br/>
-      Email: {{ item.email}} <br/>
-      Age: {{ item.age }} <br/><br/>
-      <hr>
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
 
-   {% endfor %}
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+   <h1>Members Database</h1>
+   <p>
+            
+      {% block content %}
+      
+      {% for item in all%}
+         {{ item.fname}} {{ item.lname }} 
+         Email: {{ item.email}} <br/>
+         Age: {{ item.age }} <br/><br/>
+         <hr>
 
-{% endblock %}
+      {% endfor %}
+
+      {% endblock %}
+   </p>
+</body>
+</html>
+
+
+
+
+
+
